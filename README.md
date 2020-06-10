@@ -15,9 +15,9 @@ Now, you shoud have .eslintrc.json in your project
 
 You need to install pluggins to run prettier as eslint rule
 
-npm install --save-dev eslint-plugin-prettier
-npm install --save-dev --save-exact prettier
-npm install --save-dev eslint-config-prettier
+- npm install --save-dev eslint-plugin-prettier
+- npm install --save-dev --save-exact prettier
+- npm install --save-dev eslint-config-prettier
 
 Then add: "extends": ["airbnb", "plugin:prettier/recommended"] in .eslintrc.json
 
@@ -29,7 +29,7 @@ All rules can be dissalowed or modified in .eslintrc.json
 "rules": {
     "react/jsx-no-bind": [1, { "allowArrowFunctions": true }],
     "class-methods-use-this": "off"
-  }
+}
 ```
 
 Create .prettierrc
