@@ -24,12 +24,12 @@ Then add: "extends": ["airbnb", "plugin:prettier/recommended"] in .eslintrc.json
 ### Config
 
 All rules can be dissalowed or modified in .eslintrc.json
-ex:
 
 ```json
 "rules": {
-          "react/jsx-no-bind": [1, { "allowArrowFunctions": true }]
-          }
+    "react/jsx-no-bind": [1, { "allowArrowFunctions": true }],
+    "class-methods-use-this": "off"
+  }
 ```
 
 Create .prettierrc
