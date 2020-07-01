@@ -18,18 +18,20 @@ You need to install pluggins to run prettier as eslint rule
 - npm install --save-dev eslint-plugin-prettier
 - npm install --save-dev --save-exact prettier
 - npm install --save-dev eslint-config-prettier
+- npx mrm lint-staged
 
 Then add: "extends": ["airbnb", "plugin:prettier/recommended"] in .eslintrc.json
 
 ### Config
 
-All rules can be dissalowed or modified in .eslintrc.json
+Change lint-staged rule to
 
 ```json
-"rules": {
-    "react/jsx-no-bind": [1, { "allowArrowFunctions": true }],
-    "class-methods-use-this": "off"
-}
+"lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "./node_modules/.bin/eslint --max-warnings=0",
+    ]
+  }
 ```
 
 Create .prettierrc
@@ -39,6 +41,15 @@ Add:
 {
   "singleQuote": true,
   "trailingComma": "es5"
+}
+```
+
+All rules can be dissalowed or modified in .eslintrc.json
+
+```json
+"rules": {
+  "react/jsx-no-bind": [1, { "allowArrowFunctions": true }],
+  "class-methods-use-this": "off"
 }
 ```
 

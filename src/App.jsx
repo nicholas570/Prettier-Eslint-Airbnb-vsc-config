@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Test text="Well done dude" />
+        <Test text="Well done dude" pre="pre-commit working :)" />
       </header>
     </div>
   );
