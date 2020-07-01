@@ -6,7 +6,7 @@ Node > 12 & Prettier/Eslint extensions
 
 ### Install
 
-- In the project directory, run npm install eslint --save-dev<br />
+- In the project directory, run npm i eslint@6.8.0 --save-dev<br />
 - Init eslint with ./node_modules/.bin/eslint --init<br />
 
 Now, you shoud have .eslintrc.json in your project
