@@ -6,10 +6,15 @@ Node > 12 & Prettier/Eslint extensions
 
 ### Install
 
+- git clone https://github.com/nicholas570/Prettier-Eslint-Airbnb-vsc-config.git
+- npm install
+
+### Full configuration
+
 - In the project directory, run npm i eslint@6.8.0 --save-dev<br />
 - Init eslint with ./node_modules/.bin/eslint --init<br />
 
-Now, you shoud have .eslintrc.json in your project
+Now, you should have .eslintrc.json in your project
 
 ### Pluggins
 
